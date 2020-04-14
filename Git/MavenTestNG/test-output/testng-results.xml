@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[The share Template Link is -> https://forms.office.com/Pages/ShareFormPage.aspx?id=zepLH6q3skmqobhSXLJX4LtVBF_7rVdKvQbUcztdxelUMjlIN1RVMEw4VVk4TzFNSUU5NjBGTzIySi4u&sharetoken=s1Dpv7l5y1nlCUFEs8Km]]>
+    </line>
+    <line>
+      <![CDATA[The share Collaborate Link is -> https://forms.office.com/Pages/DesignPage.aspx?fragment=FormId%3DzepLH6q3skmqobhSXLJX4LtVBF_7rVdKvQbUcztdxelUMjlIN1RVMEw4VVk4TzFNSUU5NjBGTzIySi4u%26Token%3D092887c4d8194fe1bd0d75a306150a77]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="52032" started-at="2020-04-14T13:48:35 IST" finished-at="2020-04-14T13:49:27 IST">
+    <groups>
+      <group name="FormCreation">
+        <method signature="MSFormCreation.Login()[pri:0, instance:test.MSFormCreation@6c49835d]" name="Login" class="test.MSFormCreation"/>
+        <method signature="MSFormCreation.AddTitle()[pri:1, instance:test.MSFormCreation@6c49835d]" name="AddTitle" class="test.MSFormCreation"/>
+        <method signature="MSFormCreation.AddQuest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:test.MSFormCreation@6c49835d]" name="AddQuest" class="test.MSFormCreation"/>
+      </group> <!-- FormCreation -->
+      <group name="FormShare">
+        <method signature="MSFormShare.getTemplateLink()[pri:3, instance:test.MSFormShare@5e853265]" name="getTemplateLink" class="test.MSFormShare"/>
+        <method signature="MSFormShare.getCollaborateLink()[pri:4, instance:test.MSFormShare@5e853265]" name="getCollaborateLink" class="test.MSFormShare"/>
+      </group> <!-- FormShare -->
+    </groups>
+    <test name="MSTest" duration-ms="52032" started-at="2020-04-14T13:48:35 IST" finished-at="2020-04-14T13:49:27 IST">
+      <class name="test.MSFormCreation">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.MSFormCreation@6c49835d]" name="beforeClass" is-config="true" duration-ms="6778" started-at="2020-04-14T13:48:35 IST" finished-at="2020-04-14T13:48:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:test.MSFormCreation@6c49835d]" name="Login" duration-ms="24502" started-at="2020-04-14T13:48:41 IST" finished-at="2020-04-14T13:49:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="AddTitle()[pri:1, instance:test.MSFormCreation@6c49835d]" name="AddTitle" duration-ms="610" started-at="2020-04-14T13:49:06 IST" depends-on-methods="test.MSFormCreation.Login" finished-at="2020-04-14T13:49:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddTitle -->
+        <test-method status="PASS" signature="AddQuest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:test.MSFormCreation@6c49835d]" name="AddQuest" duration-ms="4838" started-at="2020-04-14T13:49:08 IST" data-provider="ReadExcel" depends-on-methods="test.MSFormCreation.AddTitle, test.MSFormCreation.Login" finished-at="2020-04-14T13:49:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Title]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Description]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Choice]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[100 MB]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[How Satisfied are you with reliability of this software ?]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Very Satisfied]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Satisfied]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Not Satisfied]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Disappointed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddQuest -->
+        <test-method status="PASS" signature="AddQuest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:test.MSFormCreation@6c49835d]" name="AddQuest" duration-ms="5130" started-at="2020-04-14T13:49:13 IST" data-provider="ReadExcel" depends-on-methods="test.MSFormCreation.AddTitle, test.MSFormCreation.Login" finished-at="2020-04-14T13:49:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Title]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Description]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Choice]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10 MB]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[what type of credit cards do you have ?]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Visa]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[MasterCard]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[RuPay]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[American Express]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddQuest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.MSFormCreation@6c49835d]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-04-14T13:49:18 IST" finished-at="2020-04-14T13:49:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.MSFormCreation -->
+      <class name="test.MSFormShare">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.MSFormShare@5e853265]" name="beforeClass" is-config="true" duration-ms="32" started-at="2020-04-14T13:49:18 IST" finished-at="2020-04-14T13:49:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="getTemplateLink()[pri:3, instance:test.MSFormShare@5e853265]" name="getTemplateLink" duration-ms="1525" depends-on-groups="FormCreation" started-at="2020-04-14T13:49:18 IST" finished-at="2020-04-14T13:49:19 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[The share Template Link is -> https://forms.office.com/Pages/ShareFormPage.aspx?id=zepLH6q3skmqobhSXLJX4LtVBF_7rVdKvQbUcztdxelUMjlIN1RVMEw4VVk4TzFNSUU5NjBGTzIySi4u&sharetoken=s1Dpv7l5y1nlCUFEs8Km]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getTemplateLink -->
+        <test-method status="PASS" signature="getCollaborateLink()[pri:4, instance:test.MSFormShare@5e853265]" name="getCollaborateLink" duration-ms="1445" started-at="2020-04-14T13:49:19 IST" depends-on-methods="test.MSFormShare.getTemplateLink" finished-at="2020-04-14T13:49:21 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[The share Collaborate Link is -> https://forms.office.com/Pages/DesignPage.aspx?fragment=FormId%3DzepLH6q3skmqobhSXLJX4LtVBF_7rVdKvQbUcztdxelUMjlIN1RVMEw4VVk4TzFNSUU5NjBGTzIySi4u%26Token%3D092887c4d8194fe1bd0d75a306150a77]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getCollaborateLink -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.MSFormShare@5e853265]" name="afterClass" is-config="true" duration-ms="5790" started-at="2020-04-14T13:49:21 IST" finished-at="2020-04-14T13:49:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.MSFormShare -->
+    </test> <!-- MSTest -->
+  </suite> <!-- Suite -->
+</testng-results>

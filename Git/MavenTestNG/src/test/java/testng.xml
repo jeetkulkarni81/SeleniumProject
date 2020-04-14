@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false" preserve-order="true" thread-count="1">
+  <test name="MSTest">
+  <!-- <groups>
+  	<dependencies>
+  	<group name="FormCreation" depends-on=""></group>
+  	<group name="FormShare" depends-on=""></group>
+  	</dependencies>
+  </groups> -->
+    <classes>
+      <class name="test.MSFormCreation"/>
+      <class name="test.MSFormShare"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

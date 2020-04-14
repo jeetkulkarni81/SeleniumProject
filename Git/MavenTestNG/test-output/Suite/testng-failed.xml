@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="1" name="MSTest(failed)">
+    <classes>
+      <class name="test.MSFormCreation">
+        <methods>
+          <include name="AddTitle"/>
+          <include name="beforeClass"/>
+          <include name="Login"/>
+          <include name="afterClass"/>
+          <include name="AddQuest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.MSFormCreation -->
+      <class name="test.MSFormShare">
+        <methods>
+          <include name="getTemplateLink"/>
+          <include name="afterClass"/>
+          <include name="getCollaborateLink"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- test.MSFormShare -->
+    </classes>
+  </test> <!-- MSTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
