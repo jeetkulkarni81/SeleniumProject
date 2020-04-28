@@ -1,4 +1,6 @@
 package framework;
+import java.util.Scanner;
+
 import org.jasypt.encryption.pbe.*;
 
 public class TestEncryptDecrypt {
@@ -6,9 +8,11 @@ public class TestEncryptDecrypt {
 	public static void main(String[] args) 
 	{
 		try {
-			
+			System.out.println("Enter the password:- ");
+			Scanner sc = new Scanner(System.in);
+			String strInput = sc.nextLine();
 			String key = "mango";
-			String strInput = "password@123";
+			
 			StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
 			encryptor.setPassword(key);
 			String encrypted = encryptor.encrypt(strInput);
