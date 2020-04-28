@@ -2,4 +2,11 @@
 forms_url=https://forms.office.com/Pages/DesignPage.aspx
 user_email=<Email id>
 password=<password>
-groupname=<MS form group name>
+
+#Timeout Values in Seconds
+Implicit=15
+Explicit=15
+browser=chrome
+
+#Input Data File Name
+filename=src//test//resources//TestData.xlsx
